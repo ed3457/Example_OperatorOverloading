@@ -1,38 +1,48 @@
 #include "Triangle.h"
-
-void Triangle::setBase(float b)
+#include <iostream>
+using namespace std; 
+void Triangle::setBase(float base)
 {
+    this->base = base;
 }
 
 float Triangle::getBase()
 {
-    return 0.0f;
+    return base;
 }
 
 void Triangle::setHeight(float h)
 {
+    height = h; 
 }
 
 float Triangle::getHeight()
 {
-    return 0.0f;
+    return height;
 }
 
 void Triangle::printInfo()
 {
+    cout << "Base:" << getBase() << endl;
+    cout << "Height:" << getHeight() << endl;
+
 }
 
-Triangle::Triangle()
+Triangle::Triangle():Triangle(1,1)
 {
+    
 }
 
 Triangle::Triangle(float b, float h)
 {
+
+    setBase(b);
+    setHeight(h);
 }
 
 bool Triangle::operator==(const Triangle& otherTriangle) const
 {
-    return false;
+    return (base == otherTriangle.base && height == otherTriangle.height);
 }
 
 Triangle Triangle::operator+(const Triangle& otherTriangle)
