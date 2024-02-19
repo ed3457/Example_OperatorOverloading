@@ -47,15 +47,21 @@ bool Triangle::operator==(const Triangle& otherTriangle) const
 
 Triangle Triangle::operator+(const Triangle& otherTriangle)
 {
-    return Triangle();
+    return Triangle(base+otherTriangle.base, height+otherTriangle.height);
 }
 
-Triangle Triangle::operator++()
+Triangle Triangle::operator++() // pre
 {
-    return Triangle();
+    return Triangle(base+1,height+1);
+
+    /*base = base + 1;
+    height = height + 1;
+
+    return *this;*/
+  
 }
 
 Triangle Triangle::operator++(int)
 {
-    return Triangle();
+    return Triangle(base + 1, height + 1);
 }
