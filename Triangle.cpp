@@ -50,6 +50,16 @@ Triangle Triangle::operator+(const Triangle& otherTriangle)
     return Triangle(base+otherTriangle.base, height+otherTriangle.height);
 }
 
+Triangle Triangle::operator*(int num)
+{
+    return Triangle(base*num, height*num);
+}
+
+Triangle Triangle::operator+(int num)
+{
+    return Triangle(base+num,height+num);
+}
+
 Triangle Triangle::operator++() // pre
 {
     return Triangle(base+1,height+1);

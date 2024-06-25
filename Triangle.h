@@ -22,6 +22,8 @@ public:
 
 	bool operator ==(const Triangle & otherTriangle) const; 
 	Triangle operator +(const Triangle& otherTriangle) ;
+	Triangle operator *(int num);
+	Triangle operator +(int num);
 	Triangle operator ++();// pre ++obj
 	Triangle operator ++(int);// post obj++
 
