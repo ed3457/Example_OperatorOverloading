@@ -71,7 +71,12 @@ Triangle Triangle::operator++() // pre
   
 }
 
-Triangle Triangle::operator++(int)
+Triangle Triangle::operator++(int)// post increment 
 {
     return Triangle(base + 1, height + 1);
+}
+
+Triangle Triangle::operator-(int num)
+{
+    return Triangle(base-1,height-1);
 }

@@ -20,21 +20,21 @@ int main()
 
 	Triangle result = t1 + t2;
 
-	//result.printInfo();
+	result.printInfo();
 
 	Triangle result2 = t1++;
-	//result2.printInfo();
+	result2.printInfo();
 
 	//t1.printInfo();
 
-	Triangle result3 = t2 + 5; 
+	//Triangle result3 = t2 + 5; 
 
 	//result3.printInfo();
 
 	// if (t1.getBase() == t2.getBase() && t1.getHeight() == t2.getHeight())
 
-	Triangle res4 = t1 * 3;
+	//Triangle res4 = t1 * 3;
 
-	res4.printInfo();
+	//res4.printInfo();
 }
 
