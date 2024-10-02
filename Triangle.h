@@ -27,6 +27,8 @@ public:
 	Triangle operator ++();// pre ++obj
 	Triangle operator ++(int);// post obj++
 	Triangle operator -(int num);
+	float operator[](int index);
+
 
 };
 

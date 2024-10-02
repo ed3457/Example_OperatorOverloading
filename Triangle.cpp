@@ -80,3 +80,9 @@ Triangle Triangle::operator-(int num)
 {
     return Triangle(base-1,height-1);
 }
+
+float Triangle::operator[](int index)
+{
+    //TODO: add validation 
+    return (index==0)?base:height;
+}
