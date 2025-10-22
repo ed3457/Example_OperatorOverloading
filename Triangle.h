@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include<ostream>
 using namespace std; 
 
 class Triangle
@@ -20,14 +21,16 @@ public:
 	Triangle();
 	Triangle(float b, float h);
 
-	bool operator ==(const Triangle & otherTriangle) const; 
+	bool operator ==(const Triangle & otherTriangle) const;
+	//bool operator ==(int x) const;
 	Triangle operator +(const Triangle& otherTriangle) ;
-	Triangle operator *(int num);
 	Triangle operator +(int num);
+	Triangle operator *(int num);
 	Triangle operator ++();// pre ++obj
 	Triangle operator ++(int);// post obj++
 	Triangle operator -(int num);
-	float operator[](int index);
+	float operator[](int index);// Indexer 
+	//string operator<<(ostream &os);
 
 
 };

@@ -6,35 +6,31 @@
 using namespace std; 
 int main()
 {
-	Triangle t1(2, 4);
-	Triangle t2(2, 6);
+	Triangle t1(3, 4);
 
-	if (t1 == t2) // t1.==(t2) 
-	{
-		cout << "The Two Triangles are equal!\n";
-	}
+	Triangle t2(3,5);
+
+	if (t1 == t2) // t1.operator==(t2) , t2 is the other triangle 
+		cout << "Equal!\n";
 	else
-	{
-		cout << "The Two Triangles are not equal!\n";
-	}
+		cout << "Not Equal!\n";
 
-	Triangle result = t1 + t2;
+
+	/*if (t1.getBase() == t2.getBase() && t1.getHeight()== t2.getHeight())
+		cout << "Equal!\n";
+	else
+		cout << "Not Equal!\n";*/
+
+	Triangle result = t1 + t2; 
 
 	result.printInfo();
 
-	Triangle result2 = t1++;
-	result2.printInfo();
+	cout << t1[0] << endl;// get base 
 
-	//t1.printInfo();
 
-	//Triangle result3 = t2 + 5; 
+	/*Car car1; 
 
-	//result3.printInfo();
-
-	// if (t1.getBase() == t2.getBase() && t1.getHeight() == t2.getHeight())
-
-	//Triangle res4 = t1 * 3;
-
-	//res4.printInfo();
+	car1.getWheel(0);
+	car1[0]*/
 }
 

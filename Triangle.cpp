@@ -85,4 +85,13 @@ float Triangle::operator[](int index)
 {
     //TODO: add validation 
     return (index==0)?base:height;
+
+   /* switch (index) {
+    case 0:
+        return base;
+    case 1: 
+        return height;
+    }*/
+
+   
 }
